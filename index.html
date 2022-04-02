@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,44 +10,89 @@
     <link rel="stylesheet" href="css/custom.css">
     <title>College of Technology - Home</title>
 </head>
-<body class="bg-5">
+
+<body class="bg-6">
     <header class="bg-10">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm p-2">
+        <nav class="navbar navbar-expand-sm p-2">
             <div class="container-fluid navbar-container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand nav-item" href="#">
                     <img class="logo" src="images/cot-logo-white.svg" alt="COT Logo" />
-                    <span class="brand-short-name text-white d-inline-block d-sm-none fw-bold">COT</span>
-                    <span class="brand-name text-white d-none d-sm-inline-block fw-bold">COLLEGE OF<br />TECHNOLOGY</span>
+                    <!-- <span class="brand-short-name text-white d-inline-block d-sm-none fw-bold">COT</span> -->
+                    <span class="brand-name text-white d-inline-block fw-bold">COLLEGE OF<br />TECHNOLOGY</span>
                 </a>
-                <button class="navbar-toggler text-white hover-bg-8 fs-3" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler text-white hover-bg-8 fs-3 " type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse mt-2 mt-sm-0">
                     <ul class="navbar-nav">
-                        <li class="nav-item rounded-pill hover-bg-8 fs-6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Registration">
-                            <a class="nav-link text-white" href="#"><i class="bi bi-person"></i>&nbsp;REGISTRATIONS</a>
+                        <li class="nav-item rounded-pill hover-bg-8 fs-6">
+                            <a class="nav-link text-white text-center" href="#"><i class="bi bi-person"></i>&nbsp;STUDENTS</a>
                         </li>
-                        <li class="nav-item rounded-pill hover-bg-8 fs-6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Courses">
-                            <a class="nav-link text-white" href="#"><i class="bi bi-book"></i>&nbsp;COURSES</a>
+                        <li class="nav-item rounded-pill hover-bg-8 fs-6">
+                            <a class="nav-link text-white text-center" href="#"><i class="bi bi-book"></i>&nbsp;COURSES</a>
                         </li>
-                        <li class="nav-item rounded-pill hover-bg-8 fs-6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Exams">
-                            <a class="nav-link text-white" href="#"><i class="bi bi-card-heading"></i>&nbsp;EXAMS</a>
+                        <li class="nav-item rounded-pill hover-bg-8 fs-6">
+                            <a class="nav-link text-white text-center" href="#"><i class="bi bi-card-heading"></i>&nbsp;EXAMS</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- View -->
     <section class="container-fluid p-0">
-        <div class="row h-100 g-0">
-            <div class="col-md">
-                <div class="card text-white border-0 m-2 shadow-lg">
-                    <div class="card-body bg-9 rounded-3">
-                        <h5>National Diploma in ICT (NVQ 5) - Registration <span class="badge rounded-pill bg-danger text-white fw-light">Ends on <time>2022 April, 12</time></span></h5>
-            
-                        <p class="fw-light">Registrations open for National Deploma in ICT.</p>
-                        <a class="btn shadow-sm bg-2 hover-bg-white text-black" href="#">Apply Now!</a>
+        <div class="row">
+            <div class="col">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel ">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Lighthouse.jpg" class="d-block img-fluid" alt="...">
+                            <div class="carousel-caption">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Desert.jpg" class="d-block img-fluid" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Penguins.jpg" class="d-block img-fluid" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col">
+                <div class="card text-light border-0 shadow-lg m-2">
+                    <div id="card1" class="card-body bg-8 rounded-3">
+                        <h5>Banner Title Here <span class="badge bg-danger text-white fw-light">Alert <time>2022 April, 12</time></span></h5>
+
+                        <p class="fw-light w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, eius eligendi vel ab iusto animi odit hic nam, iure unde odio ducimus tenetur a. Exercitationem natus cum aut nesciunt magni.</p>
+                        <a class="btn shadow-sm bg-3 hover-bg-1 text-black" href="#">Click Here!</a>
                     </div>
                 </div>
             </div>
@@ -64,13 +110,19 @@
         </div>
     </section>
 
-    <footer class="container-fluid bg-10 footer text-muted">
-        <div>
+    <footer class="container-fluid bg-10 footer">
+        <div class="text-4">
             &copy; 2022 - CotWeb - <a href="#">Privacy</a>
         </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js" asp-append-version="true"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 
 </html>
